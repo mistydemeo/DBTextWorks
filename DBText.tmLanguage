@@ -20,7 +20,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>^(Term|ScopeNote|DateCreated|DateChanged|'Term FR'|'Int Instruments')</string>
+			<string>^(Term|ScopeNote|DateCreated|DateChanged|'.+')</string>
 			<key>name</key>
 			<string>Generic header</string>
 		</dict>

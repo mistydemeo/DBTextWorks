@@ -3,7 +3,7 @@
   "fileTypes": [""],
   "patterns": [
   	{
-  		"match": "^(Term|ScopeNote|DateCreated|DateChanged|'Term FR'|'Int Instruments')",
+  		"match": "^(Term|ScopeNote|DateCreated|DateChanged|'.+')",
   		"name": "Generic header",
   		"captures": {
   			"1": { "name": "variable.language" }
