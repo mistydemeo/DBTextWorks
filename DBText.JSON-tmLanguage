@@ -1,0 +1,71 @@
+{ "name": "DBTextWorks Thesaurus",
+  "scopeName": "text.dbtext",
+  "fileTypes": [""],
+  "patterns": [
+  	{
+  		"match": "^(Term|ScopeNote|DateCreated|DateChanged|'Term FR'|'Int Instruments')",
+  		"name": "Generic header",
+  		"captures": {
+  			"1": { "name": "variable.language" }
+  		}
+  	},
+    {
+      "match": "^(RT)",
+      "name": "Related",
+      "captures": {
+        "1": { "name": "string" }
+      }
+    },
+    {
+      "match": "^(BT)",
+      "name": "Broader",
+      "captures": {
+        "1": { "name": "support" }
+      }
+    },
+    {
+      "match": "^(NT)",
+      "name": "Narrower",
+      "captures": {
+        "1": { "name": "entity" }
+      }
+    },
+    {
+      "match": "^(UF)",
+      "name": "Use for",
+      "captures": {
+        "1": { "name": "comment" }
+      }
+    },
+    {
+      "match": "^(Use)",
+      "name": "Use",
+      "captures": {
+        "1": { "name": "invalid" }
+      }
+    },
+    {
+      "match": "(^ID) (\\d+)",
+      "name": "ID number",
+      "captures": {
+        "1": { "name": "variable.language" },
+        "2": { "name": "constant.numeric.ssraw" }
+      }
+    },
+    {
+      "match": "^(;)",
+      "name": "Line continuation",
+      "captures": {
+        "1": { "name": "string" }
+      }
+    },
+    {
+      "match": "^(\\$)$",
+      "name": "End of term",
+      "captures": {
+        "1": { "name": "meta" }
+      }
+    }
+  ],
+  "uuid": "c4e7bc1a-d782-4559-87a4-f3373178fe63"
+}
