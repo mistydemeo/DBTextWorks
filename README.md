@@ -1,6 +1,8 @@
 DB/TextWorks Syntax Highlighting for Sublime Text and TextMate
 ==============================================================
 
+![Sublime Text screenshot](screenshot.png)
+
 This simple syntax highlighting makes working with text file dumps from DB/TextWorks thesauri much easier.
 
 Note that the syntax regions are assigned arbitrarily to get attractive colours. "UF" isn't actually a comment, etc.
