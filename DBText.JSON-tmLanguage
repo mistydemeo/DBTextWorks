@@ -3,7 +3,7 @@
   "fileTypes": [""],
   "patterns": [
   	{
-  		"match": "^(Term|ScopeNote|DateCreated|DateChanged|'.+')",
+  		"match": "^(Term|ScopeNote|DateCreated|DateChanged|'\\w+( \\w+)*')",
   		"name": "Generic header",
   		"captures": {
   			"1": { "name": "variable.language" }
